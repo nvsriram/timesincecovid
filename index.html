@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Time Since COVID</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="covidloader.gif" type="image/gif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="image" href="covidloader.gif">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body onload="setDate()">
+    <nav id="links">
+        <a class="link" href="https://www.linkedin.com/in/nvsriram" target="_blank">nvsriram</a>
+        <a class="link" href="https://www.linkedin.com/in/v2anath" target="_blank">v2ananth</a>
+    </nav>
+    <div id="loader">
+        <img src="covidloader.gif" alt="" onload="removeImage()" />
+    </div>
+    <div class="fade-in">
+        <p id="covid">Time since first COVID-19 case...</p>
+        <p id="time"></p>
+        <p id="motivation">Stay strong, comrades! :')</p>
+    </div>
+    <p id="time"></p>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+html {
+    font-family: "Bebas Neue", "Helvetica", "Roboto", sans-serif;
+    font-size: 144px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media(max-width: 959px) {
+ html {
+     font-size: 45px;
+     letter-spacing: 2px;
+ } 
+}
+
+p {
+    margin: 0;
+}
+
+#covid {
+    font-size: 36px;
+    letter-spacing: normal;
+}
+
+@media(max-width: 959px) {
+    #covid {
+        font-size: 18px;
+    }
+}
+
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+img { 
+    margin: auto;
+}
+
+#motivation, .link {
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+@media(max-width: 959px) {
+    #motivation, .link {
+       font-size: 9px;
+    }
+}
+
+#links {
+    position: absolute;
+    top: 0;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
